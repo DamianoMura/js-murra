@@ -4,4 +4,5 @@ semplice giochino con alert e prompt dove si gioca a sa murra sarda contro il co
 
 ## prossimi step
 
-eliminare alert e prompt e mostrare tutto in pagina
+- eliminare alert e prompt e mostrare tutto in pagina
+- renderlo multiplayer
