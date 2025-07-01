@@ -1,4 +1,16 @@
-//giochiamo a murra
+//hands images
+
+let hands=[
+  'assets/img/zero.png',
+  'assets/img/uno.png',
+  'assets/img/due.png',
+  'assets/img/tre.png',
+  'assets/img/quattro.png',
+  'assets/img/cinque.png',
+]
+
+
+//variabili di gioco
 let pcNumber;
 let pcDeclared;
 let humanNumber;
@@ -6,7 +18,18 @@ let humanDeclared;
 let pcScore=0;
 let humanScore=0;
 let result;
-
+window.onload = function(){
+  document.getElementById('humanScore').innerHTML = humanScore;
+  document.getElementById('pcScore').innerHTML = pcScore;
+}
+document.getElementsByClassName("hand").style.display="none";
+function play(){
+  
+    pcNumber=Math.floor(Math.random()*5)+1;
+    pcDeclared=(Math.floor(Math.random()*5)+1)+pcNumber;
+    
+}
+/*
 while (pcScore<10 || humanScore<10){
   pcNumber=Math.floor(Math.random()*5)+1;
   pcDeclared=(Math.floor(Math.random()*5)+1)+pcNumber;
@@ -51,3 +74,4 @@ if (humanScore>pcScore){
   alert("hai vinto");
 }
 else alert("hai perso");
+*/
