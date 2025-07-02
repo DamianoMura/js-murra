@@ -19,121 +19,123 @@
           <h1>Giochiamo a Sa Murra</h1>
         </div>
         <div class="col-100">
-          <div class="container bg-light m-3 d-flex justify-content-center">
-            <form class="card m-3 w-50" id="game">
 
-              <div
-                class="card-header bg-secondary text-light d-flex justify-content-between">
-                <div><span>tu : </span><span id="humanScore"></span>
-                </div>
-                <div>round: <span id="round"></span></div>
-                <div><span id="pcScore"></span> <span>: computer</span></div>
+          <form
+            class="card w-80  h-100 m-3 bg-light m-3 "
+            id="game">
+
+            <div
+              class="card-header bg-secondary text-light d-flex justify-content-between">
+              <div><span>tu : </span><span id="humanScore">0</span>
               </div>
+              <div>round: <span id="round">0</span></div>
+              <div><span id="pcScore">0</span> <span>: computer</span></div>
+            </div>
 
-              <div class="card-body p-3">
-                <div class="row">
-                  <div class="col-12">
-                    <div class="d-flex justify-content-between">
+            <div class="card-body p-3">
+              <div class="row">
+                <div class="col-12">
+                  <div class="d-flex justify-content-between">
 
-                      <div class="hands">
-                        <span>scegli il numero<br> della tua mano</span>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio"
-                            name="handValue" id="handValue-1" value=1>
-                          <label class="form-check-label"
-                            for="handValue-1">
-                            <img src="assets/img/uno.png" alt>
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio"
-                            name="handValue" id="handValue-2" value=2>
-                          <label class="form-check-label"
-                            for="handValue-2">
-                            <img src="assets/img/due.png" alt>
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio"
-                            name="handValue" id="handValue-3" value=3>
-                          <label class="form-check-label"
-                            for="handValue-3">
-                            <img src="assets/img/tre.png" alt>
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio"
-                            name="handValue" id="handValue-4" value=4>
-                          <label class="form-check-label"
-                            for="handValue-4">
-                            <img src="assets/img/quattro.png" alt>
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio"
-                            name="handValue" id="handValue-5" value=5>
-                          <label class="form-check-label"
-                            for="handValue-5">
-                            <img src="assets/img/cinque.png" alt>
-                          </label>
-                        </div>
+                    <div class="hands">
+                      <span>scegli il numero<br> della tua mano</span>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio"
+                          name="handValue" id="handValue-1" value=1>
+                        <label class="form-check-label"
+                          for="handValue-1">
+                          <img src="assets/img/uno.png" alt>
+                        </label>
                       </div>
-                      <div class="hands">
-                        <span>predici<br> la mano dell'avversario</span>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio"
-                            name="predicted" id="predictValue-1" value=1>
-                          <label class="form-check-label"
-                            for="predictValue-1">
-                            <img src="assets/img/uno.png" alt>
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio"
-                            name="predicted" id="predictValue-2" value=2>
-                          <label class="form-check-label"
-                            for="predictValue-2">
-                            <img src="assets/img/due.png" alt>
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio"
-                            name="predicted" id="predictValue-3" value=3>
-                          <label class="form-check-label"
-                            for="predictValue-3">
-                            <img src="assets/img/tre.png" alt>
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio"
-                            name="predicted" id="predictValue-4" value=4>
-                          <label class="form-check-label"
-                            for="predictValue-4">
-                            <img src="assets/img/quattro.png" alt>
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio"
-                            name="predicted" id="predictValue-5" value=5>
-                          <label class="form-check-label"
-                            for="predictValue-5">
-                            <img src="assets/img/cinque.png" alt>
-                          </label>
-                        </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio"
+                          name="handValue" id="handValue-2" value=2>
+                        <label class="form-check-label"
+                          for="handValue-2">
+                          <img src="assets/img/due.png" alt>
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio"
+                          name="handValue" id="handValue-3" value=3>
+                        <label class="form-check-label"
+                          for="handValue-3">
+                          <img src="assets/img/tre.png" alt>
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio"
+                          name="handValue" id="handValue-4" value=4>
+                        <label class="form-check-label"
+                          for="handValue-4">
+                          <img src="assets/img/quattro.png" alt>
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio"
+                          name="handValue" id="handValue-5" value=5>
+                        <label class="form-check-label"
+                          for="handValue-5">
+                          <img src="assets/img/cinque.png" alt>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="hands">
+                      <span>predici<br> la mano dell'avversario</span>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio"
+                          name="predicted" id="predictValue-1" value=1>
+                        <label class="form-check-label"
+                          for="predictValue-1">
+                          <img src="assets/img/uno.png" alt>
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio"
+                          name="predicted" id="predictValue-2" value=2>
+                        <label class="form-check-label"
+                          for="predictValue-2">
+                          <img src="assets/img/due.png" alt>
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio"
+                          name="predicted" id="predictValue-3" value=3>
+                        <label class="form-check-label"
+                          for="predictValue-3">
+                          <img src="assets/img/tre.png" alt>
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio"
+                          name="predicted" id="predictValue-4" value=4>
+                        <label class="form-check-label"
+                          for="predictValue-4">
+                          <img src="assets/img/quattro.png" alt>
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio"
+                          name="predicted" id="predictValue-5" value=5>
+                        <label class="form-check-label"
+                          for="predictValue-5">
+                          <img src="assets/img/cinque.png" alt>
+                        </label>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
+            </div>
 
-              <div class="card-footer  d-flex justify-content-center">
-                <button type="submit" data-bs-toggle="modal"
-                  data-bs-target="#showRoundResult"
-                  class="btn btn-success">vai</button>
-              </div>
+            <div class="card-footer  d-flex justify-content-center">
+              <button type="submit" data-bs-toggle="modal"
+                data-bs-target="#showRoundResult"
+                class="btn btn-success">vai</button>
+            </div>
 
-            </form>
-          </div>
+          </form>
+
         </div>
       </div>
     </div>

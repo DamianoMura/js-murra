@@ -19,7 +19,7 @@ const voice =[
   "sette",
   "otto",
   "nove",
-  "dieci/murra"
+  "murra"
 ]
 
 //variabili di gioco
