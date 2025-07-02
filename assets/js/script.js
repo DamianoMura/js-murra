@@ -31,7 +31,7 @@ let humanDeclared;
 let pcScore=0;
 let humanScore=0;
 let result;
-
+document.getElementsByClassName("playground-card").style.display='none';
 
 
 

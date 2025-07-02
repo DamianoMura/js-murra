@@ -13,15 +13,51 @@
     <title>sa murra</title>
   </head>
   <body class="bg-light">
-    <div class="container my-5">
+    <header class="bg-dark text-light  text-center">
+      <h1 class="fs-03">Sa Murra</h1>
+    </header>
+    <main class="bg-light">
+
+      <div class="playground-card m-5 h-100 rounded-3 shadow-lg p-4">
+        <div class="playground-header rounded-pill bg-secondary inset-shadow">
+
+          <div class="stats fs-1 d-flex justify-content-center">
+
+            <span class="fs-04 player px-1">player : </span>
+            <span class="fs-04 playerScore px-1">0</span>
+          </div>
+
+          <div
+            class="stats fs-1  p-3 d-flex justify-content-center ">
+            <span class="fs-04 px-1">Round : </span>
+            <span class="fs-04 playerScore px-1">0</span>
+          </div>
+
+          <div
+            class="stats fs-1 text-end px-4 d-flex justify-content-center transparent">
+            <span class="fs-04 pcScore px-1">0</span>
+            <span class="fs-04 px-1"> : Computer</span>
+          </div>
+
+        </div> <!--playground-header-->
+
+        <div class="playground-body bg-success">
+
+        </div> <!--playground-body-->
+
+      </div> <!-- / playground-card-->
+
+    </main>
+
+    <!-- <div class="container my-5">
       <div class="row">
-        <div class="col-100 text-center ">
+        <div class="col-12 text-center ">
           <h1>Giochiamo a Sa Murra</h1>
         </div>
-        <div class="col-100">
+        <div class="col-12">
 
           <form
-            class="card w-80  h-100 m-3 bg-light m-3 "
+            class="card  m-3 bg-light m-3 "
             id="game">
 
             <div
@@ -44,7 +80,7 @@
                           name="handValue" id="handValue-1" value=1>
                         <label class="form-check-label"
                           for="handValue-1">
-                          <img src="assets/img/uno.png" alt>
+                          <img src="assets/img/uno.png" class="hand" alt>
                         </label>
                       </div>
                       <div class="form-check">
@@ -52,7 +88,7 @@
                           name="handValue" id="handValue-2" value=2>
                         <label class="form-check-label"
                           for="handValue-2">
-                          <img src="assets/img/due.png" alt>
+                          <img src="assets/img/due.png" class="hand" alt>
                         </label>
                       </div>
                       <div class="form-check">
@@ -60,15 +96,15 @@
                           name="handValue" id="handValue-3" value=3>
                         <label class="form-check-label"
                           for="handValue-3">
-                          <img src="assets/img/tre.png" alt>
-                        </label>
+                          <img src="assets/img/tre.png" class="hand" alt>
+                         </label>
                       </div>
                       <div class="form-check">
                         <input class="form-check-input" type="radio"
                           name="handValue" id="handValue-4" value=4>
                         <label class="form-check-label"
                           for="handValue-4">
-                          <img src="assets/img/quattro.png" alt>
+                          <img src="assets/img/quattro.png" class="hand" alt>
                         </label>
                       </div>
                       <div class="form-check">
@@ -76,7 +112,7 @@
                           name="handValue" id="handValue-5" value=5>
                         <label class="form-check-label"
                           for="handValue-5">
-                          <img src="assets/img/cinque.png" alt>
+                          <img src="assets/img/cinque.png" class="hand" alt>
                         </label>
                       </div>
                     </div>
@@ -87,7 +123,7 @@
                           name="predicted" id="predictValue-1" value=1>
                         <label class="form-check-label"
                           for="predictValue-1">
-                          <img src="assets/img/uno.png" alt>
+                          <img src="assets/img/uno.png" class="hand" alt>
                         </label>
                       </div>
                       <div class="form-check">
@@ -95,7 +131,7 @@
                           name="predicted" id="predictValue-2" value=2>
                         <label class="form-check-label"
                           for="predictValue-2">
-                          <img src="assets/img/due.png" alt>
+                          <img src="assets/img/due.png" class="hand" alt>
                         </label>
                       </div>
                       <div class="form-check">
@@ -103,7 +139,7 @@
                           name="predicted" id="predictValue-3" value=3>
                         <label class="form-check-label"
                           for="predictValue-3">
-                          <img src="assets/img/tre.png" alt>
+                          <img src="assets/img/tre.png" class="hand" alt>
                         </label>
                       </div>
                       <div class="form-check">
@@ -111,7 +147,7 @@
                           name="predicted" id="predictValue-4" value=4>
                         <label class="form-check-label"
                           for="predictValue-4">
-                          <img src="assets/img/quattro.png" alt>
+                          <img src="assets/img/quattro.png" class="hand" alt>
                         </label>
                       </div>
                       <div class="form-check">
@@ -119,7 +155,7 @@
                           name="predicted" id="predictValue-5" value=5>
                         <label class="form-check-label"
                           for="predictValue-5">
-                          <img src="assets/img/cinque.png" alt>
+                          <img src="assets/img/cinque.png" class="hand" alt>
                         </label>
                       </div>
                     </div>
@@ -139,7 +175,7 @@
         </div>
       </div>
     </div>
-    <!--modal-->
+    modal-->
     <div class="modal" tabindex="-1" id="showRoundResult">
       <div class="modal-dialog">
         <div class="modal-content">
